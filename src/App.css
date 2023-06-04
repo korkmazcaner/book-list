@@ -1,38 +1,27 @@
-.App {
-  text-align: center;
+.book-card {
+  display: flex;
+  justify-content: space-between;
+  margin: auto;
+  max-width: 850px;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.confirm-modal {
+  display: grid;
+  place-items: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.386);
+  z-index: 1;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.modal-inner {
+  background: white;
+  padding: 70px;
+  border-radius: 10px;
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+  gap: 20px;
 }
